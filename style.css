@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&display=swap");
+body {
+  overflow-x: hidden;
+}
+
+.navbar {
+  background-color: rgb(8, 102, 8);
+}
+
+.navbar .navbar-brand span {
+  font-family: "Roboto Slab";
+}
+
+.navbar .nav-link {
+  margin: 20px;
+  font-size: 16px;
+  font-family: "Edu AU VIC WA NT Pre";
+  color: whitesmoke;
+}
+
+.navbar .nav-link:hover {
+  font-weight: 500;
+}
+
+.navbar .bi-list {
+  font-size: 2rem;
+  color: white;
+}
+
+.navbar .bi-x {
+  font-size: 2rem;
+  color: white;
+}
+
+.navbar .navbar-toggler {
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.banner {
+  background-image: url("Assets/Images/banner3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.banner .jargon h3 {
+  font-family: "Edu AU VIC WA NT Pre";
+}
+
+.banner .btn {
+  background-color: green;
+  border: 3px solid green !important;
+  border-radius: 13px;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.banner .btn:hover {
+  background-color: rgb(22, 99, 22) !important;
+  border: 3px solid rgb(22, 99, 22) !important;
+  transition: all 0.3s;
+}
+
+.about {
+  margin-top: 80px;
+}
+
+.about h3 {
+  color: green;
+}
+
+.about span.strip {
+  display: inline-block;
+  background-color: green;
+  width: 50px;
+  height: 4px;
+  margin: 0 5px 10px;
+}
+
+.about p {
+  text-align: justify;
+}
+
+.about .promosi {
+  margin-top: 100px;
+}
+
+.about .promosi span.green-text {
+  color: green;
+}
+
+.about .promosi .card {
+  background-color: rgb(13, 118, 13);
+  color: white;
+  padding: 24px 0 16px;
+}
+
+.about .promosi .card i {
+  background-color: rgb(14, 75, 14);
+  padding: 1rem;
+  font-size: 1.563rem;
+  border-radius: 50%;
+}
+
+.about .promosi .card i:hover,
+.about .promosi .card:hover i {
+  background-color: rgb(24, 162, 24);
+  transition: all 0.2s;
+}
+
+.menu {
+  margin-top: 200px;
+}
+
+.menu span.strip {
+  display: inline-block;
+  background-color: green;
+  width: 50px;
+  height: 4px;
+  margin: 0 5px 10px;
+}
+
+.menu h3.green-text {
+  color: green;
+}
+
+.menu .card {
+  border-width: 3px;
+  border-radius: 25px;
+}
+
+.menu .card:hover {
+  border: 3px solid green;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.02);
+  transition: all 0.3s ease-in-out;
+}
+
+.menu .card .card-img-top {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu .card .image-container {
+  padding: 15px 15px;
+}
+
+.menu .card .card-body {
+  padding: 20px;
+  border-radius: 25px;
+}
+
+.menu .card .card-body span {
+  font-family: "Roboto Slab";
+}
+
+.menu .card .card-body h5.product-name {
+  font-size: 24px;
+}
+
+.testimoni {
+  margin-top: 200px;
+}
+
+@media (max-width: 800px) {
+  .navbar .navbar-nav {
+    align-items: center;
+  }
+
+  .about h3.fs-2 {
+    margin-top: 20px;
+  }
+
+  .menu .card {
+    width: auto !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .banner img {
+    width: 350px;
+    height: 350px;
+  }
+
+  .banner .jargon {
+    background-color: rgb(39, 144, 39);
+    padding: 0 20px 30px;
+  }
+
+  .banner .mt-5 {
+    margin-top: 2rem !important;
+  }
+
+  .about img {
+    width: 350px;
+    height: 350px;
+  }
+
+  .about h3 {
+    text-align: center;
+  }
+
+  .about .promosi {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .banner img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .about img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .banner .jargon {
+    background-color: rgb(39, 144, 39);
+  }
+}
