@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yuji+Mai&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 body {
   overflow-x: hidden;
 }
@@ -14,14 +15,14 @@ body {
 }
 
 .navbar .nav-link {
-  margin: 20px;
-  font-size: 16px;
-  font-family: "Edu AU VIC WA NT Pre";
+  margin: 16px;
+  font-size: 18px;
+  font-family: "Yuji Mai";
   color: whitesmoke;
 }
 
 .navbar .nav-link:hover {
-  font-weight: 500;
+  font-weight: bold;
 }
 
 .navbar .bi-list {
@@ -117,6 +118,22 @@ body {
   margin-top: 200px;
 }
 
+.menu a.nav-link {
+  color: black;
+  font-size: 20px;
+}
+
+.menu a.nav-link:hover {
+  color: white;
+  background-color: green;
+}
+
+.menu a.nav-link.active {
+  color: white;
+  background-color: green;
+  border: none !important;
+}
+
 .menu span.strip {
   display: inline-block;
   background-color: green;
@@ -127,6 +144,14 @@ body {
 
 .menu h3.green-text {
   color: green;
+}
+
+.menu .tab-pane {
+  display: none;
+}
+
+.menu .tab-pane.active {
+  display: block;
 }
 
 .menu .card {
@@ -168,6 +193,18 @@ body {
 
 .testimoni {
   margin-top: 200px;
+}
+
+.testimoni span.green-text {
+  color: green;
+}
+
+.testimoni span.strip {
+  display: inline-block;
+  background-color: green;
+  width: 50px;
+  height: 4px;
+  margin: 0 5px 10px;
 }
 
 @media (max-width: 800px) {
