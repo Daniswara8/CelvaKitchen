@@ -4,6 +4,7 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 body {
   overflow-x: hidden;
+  max-width: 100% !important;
 }
 
 .navbar {
@@ -17,12 +18,13 @@ body {
 .navbar .nav-link {
   margin: 16px;
   font-size: 18px;
-  font-family: "Yuji Mai";
+  font-family: "Roboto Slab";
   color: whitesmoke;
 }
 
 .navbar .nav-link:hover {
-  font-weight: bold;
+  /* font-weight: bold; */
+  color: rgb(35, 202, 35);
 }
 
 .navbar .bi-list {
@@ -157,6 +159,7 @@ body {
 .menu .card {
   border-width: 3px;
   border-radius: 25px;
+  transition: all 0.3s ease-in-out;
 }
 
 .menu .card:hover {
@@ -207,6 +210,111 @@ body {
   margin: 0 5px 10px;
 }
 
+.testimoni button.carousel-control-prev i,
+.testimoni button.carousel-control-next i {
+  color: green;
+  font-size: 30px;
+}
+
+.testimoni button.carousel-control-prev i:hover,
+.testimoni button.carousel-control-next i:hover {
+  color: green;
+  font-weight: bold;
+}
+
+.faq {
+  margin-top: 150px;
+}
+
+.faq .accordion-button {
+  border: none !important;
+  box-shadow: none !important;
+  background-color: rgb(0, 100, 0);
+  color: white;
+}
+
+.faq .accordion-button:after {
+  background-image: none !important;
+  content: "\F282";
+  font-family: "Bootstrap-icons";
+}
+
+.faq .accordion-body {
+  background-color: rgb(235, 235, 235);
+}
+
+.faq .accordion-button:hover {
+  background-color: green;
+}
+
+.contact {
+  margin-top: 200px;
+}
+
+.contact h3.green-text {
+  color: green;
+}
+
+.contact span.strip {
+  display: inline-block;
+  width: 50px;
+  background-color: green;
+  margin: 0 5px 10px;
+  height: 4px;
+}
+
+.contact .card-contact {
+  background-color: green;
+}
+
+.contact .card-contact a {
+  font-size: 18px;
+  height: auto;
+  font-weight: bold;
+  background-color: white !important;
+  border: 2px solid white !important;
+  color: green;
+}
+
+.contact .card-contact a:hover {
+  background-color: green !important;
+  transition: all 0.3s;
+  color: white;
+}
+
+.contact .location {
+  margin-top: 70px;
+}
+
+.contact .location h3.green-text {
+  color: green;
+}
+
+.contact .location .embed-responsive {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  overflow: hidden;
+}
+
+.contact .embed-responsive::before {
+  content: "";
+  display: block;
+  padding-top: 56.25%;
+}
+
+.contact iframe.embed-responsive-item {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
 @media (max-width: 800px) {
   .navbar .navbar-nav {
     align-items: center;
@@ -236,6 +344,11 @@ body {
     margin-top: 2rem !important;
   }
 
+  .about span.strip {
+    width: 35px;
+    margin: 0 5px 7px;
+  }
+
   .about img {
     width: 350px;
     height: 350px;
@@ -247,6 +360,19 @@ body {
 
   .about .promosi {
     padding: 10px;
+  }
+
+  .menu span.strip {
+    width: 30px;
+    margin: 0 5px 5px;
+  }
+
+  .menu a.nav-link {
+    display: inline-block;
+  }
+
+  .testimoni span.strip {
+    display: none;
   }
 }
 
@@ -263,5 +389,14 @@ body {
 
   .banner .jargon {
     background-color: rgb(39, 144, 39);
+  }
+
+  .about span.strip {
+    width: 30px;
+    margin: 0 5px 5px;
+  }
+
+  .menu a.nav-link {
+    display: inline-block;
   }
 }
