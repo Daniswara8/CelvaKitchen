@@ -23,7 +23,6 @@ body {
 }
 
 .navbar .nav-link:hover {
-  /* font-weight: bold; */
   color: rgb(35, 202, 35);
 }
 
@@ -290,6 +289,10 @@ body {
   color: green;
 }
 
+.contact .location h5 {
+  margin-bottom: 0;
+}
+
 .contact .location .embed-responsive {
   position: relative;
   display: block;
@@ -315,6 +318,11 @@ body {
   border: 0;
 }
 
+.footer {
+  background-color: rgb(8, 102, 8);
+  margin-top: 100px;
+}
+
 @media (max-width: 800px) {
   .navbar .navbar-nav {
     align-items: center;
@@ -326,6 +334,10 @@ body {
 
   .menu .card {
     width: auto !important;
+  }
+
+  .contact {
+    padding: 0 50px;
   }
 }
 
@@ -373,6 +385,10 @@ body {
 
   .testimoni span.strip {
     display: none;
+  }
+
+  .contact {
+    padding: 0;
   }
 }
 
