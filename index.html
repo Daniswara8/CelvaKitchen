@@ -16,6 +16,9 @@
 
     <!-- Style Css -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Aos Cdn -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -56,15 +59,16 @@
     <!-- Banner -->
     <section class="banner">
         <div class="row h-100 justify-content-center justify-content-md-around justify-content-lg-center mt-5">
-            <div
-                class="col-md-5 col-lg-6 my-md-auto order-2 order-lg-1 jargon d-flex align-items-center justify-content-center">
+            <div class="col-md-5 col-lg-6 my-md-auto order-2 order-lg-1 jargon d-flex align-items-center justify-content-center"
+                data-aos="fade-right" data-aos-duration="1000">
                 <div class="text-center mt-5 mt-md-0">
                     <h3 class="fs-2 text-white">Olahan Nasi Terbaik Di Semarang</h3>
                     <button type="button" class="btn border border-0 text-white p-3 mt-3">Let's Explore our
                         Menu!</button>
                 </div>
             </div>
-            <div class="col-md-5 col-lg-6 mt-5 my-md-auto order-1 order-lg-2">
+            <div class="col-md-5 col-lg-6 mt-5 my-md-auto order-1 order-lg-2" data-aos="fade-left"
+                data-aos-duration="1000">
                 <div class="text-center">
                     <img src="Assets/Images/logo-removebg-preview.png" class="object-fit-cover" alt="" height="400"
                         width="400">
@@ -76,24 +80,25 @@
 
     <!-- About Us -->
     <section class="about" id="about">
-        <h3 class="fs-1 text-center">
+        <h3 class="fs-1 text-center" data-aos="fade-up" data-aos-duration="500">
             <span class="strip"></span>
             About Us
             <span class="strip"></span>
         </h3>
         <div class="row gap-5 gap-md-0 mt-5 justify-content-center">
-            <div class="col-10 col-lg-5 my-auto order-2 order-lg-1">
+            <div class="col-10 col-lg-5 my-auto order-2 order-lg-1" data-aos="fade-right" data-aos-duration="600">
                 <h3 class="fs-2 text-black text-center text-lg-start">
                     Bukan Sekedar Nasi Biasa
                 </h3>
                 <p class="fs-5">
-                    odio eveniet
-                    iste debitis saepe praesentium sed veniam quaerat quisquam voluptas, alias similique amet aperiam
-                    sint cumque mollitia earum minus nam quas tempora repellendus consectetur? Tempora esse deserunt
-                    veniam quae nemo deleniti tenetur neque praesentium! Tempora, non necessitatibus!
+                    Selamat datang di Celva Kitchen, penyedia layanan catering yang menghadirkan hidangan berkualitas
+                    dengan cita rasa autentik. Kami menggunakan bahan-bahan segar dan terbaik untuk memastikan setiap
+                    sajian kami bukan hanya memuaskan, tetapi juga menciptakan pengalaman kuliner yang berkesan. Kami
+                    percaya bahwa makanan yang lezat adalah perpaduan antara resep terbaik dan semangat melayani.
                 </p>
             </div>
-            <div class="col-10 col-lg-5 col-xl-4 order-1 order-lg-2">
+            <div class="col-10 col-lg-5 col-xl-4 order-1 order-lg-2 my-auto" data-aos="fade-left"
+                data-aos-duration="600">
                 <div class="text-center">
                     <img src="Assets/Images/about.jpg" class="object-fit-cover" alt="" height="300" width="400">
                 </div>
@@ -106,7 +111,7 @@
 
             <div class="container">
                 <div class="row row-gap-4 column-gap-xl-5 justify-content-center mt-5">
-                    <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3" data-aos="zoom-out" data-aos-duration="500">
                         <div class="card">
                             <div class="card-body text-center">
                                 <i class="bi bi-gem text-center mt-5"></i>
@@ -114,7 +119,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3" data-aos="zoom-out" data-aos-duration="1000">
                         <div class="card">
                             <div class="card-body text-center">
                                 <i class="bi bi-box-seam text-center mt-3"></i>
@@ -122,7 +127,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3" data-aos="zoom-out" data-aos-duration="1500">
                         <div class="card">
                             <div class="card-body text-center">
                                 <i class="bi bi-hand-thumbs-up-fill"></i>
@@ -137,7 +142,7 @@
     <!-- end About Us -->
 
     <!-- Menu -->
-    <section class="menu" id="menu">
+    <section class="menu" id="menu" data-aos="fade-up" data-aos-duration="600">
         <h3 class="fs-1 text-center green-text"> <span class="strip"></span> Menu Celva Kitchen <span
                 class="strip"></span></h3>
         <div class="container mt-5">
@@ -471,9 +476,9 @@
         </div>
 
         <div class="faq">
-            <h3 class="fs-3 text-center">Frequently Ask Questions</h3>
+            <h3 class="fs-3 text-center" data-aos="fade-right" data-aos-duration="600">Frequently Ask Questions</h3>
             <div class="row justify-content-center mt-5">
-                <div class="col-10 col-lg-6">
+                <div class="col-10 col-lg-6" data-aos="fade-left" data-aos-duration="600">
                     <div class="accordion accordion-flush" id="accordionFlushExample">
                         <div class="accordion-item">
                             <h2 class="accordion-header">
@@ -628,6 +633,8 @@
     </footer> -->
     <!-- End Footer -->
 
+    <!-- Aos Cdn Js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!-- Bootstrap Js Cdn -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -637,8 +644,11 @@
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
         crossorigin="anonymous"></script>
 
-
     <script>
+
+        // Initialize Aos
+        AOS.init({ once: true });
+
         // interactive button hamburger icon dan x icon di navbar 
         document.addEventListener("DOMContentLoaded", function () {
             const navbarToggler = document.querySelector('.navbar-toggler');
