@@ -97,7 +97,8 @@ body {
 }
 
 .about .promosi .card {
-  background-color: rgb(13, 118, 13);
+  /* background-color: rgb(13, 118, 13); */
+  background-color: rgb(225, 225, 225);
   color: white;
   padding: 24px 0 16px;
 }
@@ -113,6 +114,10 @@ body {
 .about .promosi .card:hover i {
   background-color: rgb(24, 162, 24);
   transition: all 0.2s;
+}
+
+.about .promosi h4 {
+  color: black;
 }
 
 .menu {
@@ -320,7 +325,15 @@ body {
 
 .footer {
   background-color: rgb(8, 102, 8);
-  margin-top: 100px;
+  margin-top: 125px;
+}
+
+.footer .footer-about h4 {
+  font-family: "Roboto Slab";
+}
+
+.footer .footer-contact p {
+  margin-bottom: 5px !important;
 }
 
 @media (max-width: 800px) {
