@@ -41,20 +41,37 @@ body {
   border: none !important;
 }
 
-.banner {
-  background-image: url("Assets/Images/banner3.jpg");
-  background-position: center;
+.banner,
+.banner .carousel {
+  height: 100vh;
+}
+
+.banner .carousel .carousel-item {
+  height: 100vh;
+}
+
+.banner .carousel .carousel-inner .image-carousel-1,
+.banner .carousel .carousel-inner .image-carousel-2 {
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
   width: 100%;
+  height: 100%;
+  background-position: center;
+}
+
+.banner .carousel .carousel-inner .image-carousel-1 {
+  background-image: url("Assets/Images/banner1.jpg");
+}
+
+.banner .carousel .carousel-inner .image-carousel-2 {
+  background-image: url("Assets/Images/banner2.jpg");
 }
 
 .banner .jargon h3 {
   font-family: "Edu AU VIC WA NT Pre";
 }
 
-.banner .btn {
+.banner button.button-menu {
   background-color: green;
   border: 3px solid green !important;
   border-radius: 13px;
@@ -62,10 +79,42 @@ body {
   font-size: 1.25rem;
 }
 
-.banner .btn:hover {
+.banner button.button-menu:hover {
   background-color: rgb(22, 99, 22) !important;
   border: 3px solid rgb(22, 99, 22) !important;
   transition: all 0.3s;
+}
+
+.banner button.button-testimoni,
+.banner button.button-about-us {
+  /* background-color: green; */
+  background-color: transparent;
+  border: 3px solid green !important;
+  border-radius: 50px;
+  padding: 8px 45px;
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: white;
+}
+
+.banner button.button-testimoni:hover,
+.banner button.button-about-us:hover {
+  background-color: green;
+  border: 3px solid green;
+  transition: all 0.5s;
+}
+
+.banner .carousel i.bi.bi-chevron-left,
+.banner .carousel i.bi.bi-chevron-right {
+  font-size: 35px;
+}
+
+.banner .carousel button.carousel-control-prev {
+  left: -60px;
+}
+
+.banner .carousel button.carousel-control-next {
+  right: -60px;
 }
 
 .about {
@@ -360,6 +409,24 @@ body {
     align-items: center;
   }
 
+  .banner img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .banner .carousel button.carousel-control-prev {
+    left: -20px;
+  }
+
+  .banner .carousel button.carousel-control-next {
+    right: -20px;
+  }
+
+  .banner .carousel i.bi.bi-chevron-left,
+  .banner .carousel i.bi.bi-chevron-right {
+    font-size: 30px;
+  }
+
   .about h3.fs-2 {
     margin-top: 20px;
   }
@@ -375,17 +442,22 @@ body {
 
 @media (max-width: 500px) {
   .banner img {
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
+    margin-top: 40px;
   }
 
   .banner .jargon {
     background-color: rgb(39, 144, 39);
-    padding: 0 20px 30px;
+    padding: 50px 20px 100px;
   }
 
-  .banner .mt-5 {
-    margin-top: 2rem !important;
+  .banner .carousel button.carousel-control-prev {
+    left: -10px;
+  }
+
+  .banner .carousel button.carousel-control-next {
+    right: -10px;
   }
 
   .about span.strip {
@@ -430,13 +502,28 @@ body {
     height: 300px;
   }
 
+  .banner .jargon {
+    background-color: rgb(39, 144, 39);
+    padding-bottom: 100px;
+  }
+
+  .banner .image-carousel-2 h3 {
+    font-size: 1.25rem !important;
+  }
+
+  .banner .image-carousel-2 p {
+    font-size: 16px !important;
+  }
+
+  .banner .image-carousel-2 button.button-testimoni,
+  .banner .image-carousel-2 button.button-about-us {
+    font-size: 0.875rem;
+    padding: 6px 30px;
+  }
+
   .about img {
     width: 300px;
     height: 300px;
-  }
-
-  .banner .jargon {
-    background-color: rgb(39, 144, 39);
   }
 
   .about span.strip {
